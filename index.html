@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>For Anushka ❤️</title>
+
+<style>
+
+/* =========================================================
+   BASIC
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    color: #63364a;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe5ef,
+            #f7e6ff,
+            #e4efff
+        );
+}
+
+
+/* =========================================================
+   SLIDES
+========================================================= */
+
+.slide {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+}
+
+.slide.active {
+
+    display: flex;
+
+    animation:
+        slideIn .8s ease;
+
+}
+
+@keyframes slideIn {
+
+    from {
+        opacity: 0;
+        transform: scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.card {
+
+    width: min(850px, 94vw);
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 35px;
+
+    background:
+        rgba(255,255,255,.73);
+
+    backdrop-filter:
+        blur(16px);
+
+    border:
+        1px solid
+        rgba(255,255,255,.9);
+
+    box-shadow:
+        0 25px 70px
+        rgba(110,50,90,.18);
+
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+h1 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    color: #d84d82;
+
+    font-size:
+        clamp(40px, 8vw, 75px);
+
+    margin:
+        10px 0 20px;
+
+}
+
+h2 {
+
+    color:
+        #b9376c;
+
+}
+
+p {
+
+    font-size:
+        clamp(16px, 2.5vw, 20px);
+
+    line-height:
+        1.8;
+
+}
+
+.small {
+
+    color:
+        #a86b83;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+
+    border: none;
+
+    padding:
+        14px 25px;
+
+    margin:
+        10px 5px;
+
+    border-radius:
+        50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e95b91,
+            #c94c83
+        );
+
+    color:
+        white;
+
+    font-size:
+        16px;
+
+    font-weight:
+        bold;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(200,60,120,.25);
+
+    transition:
+        .3s;
+
+}
+
+button:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.04);
+
+}
+
+.no {
+
+    background:
+        #9b9b9b;
+
+}
+
+
+/* =========================================================
+   OPENING SKY
+========================================================= */
+
+.opening {
+
+    background:
+        linear-gradient(
+            180deg,
+            #8fd6ff 0%,
+            #dff5ff 55%,
+            #fff0f6 100%
+        );
+
+}
+
+
+/* =========================================================
+   CLOUD
+========================================================= */
+
+.cloud {
+
+    position:
+        absolute;
+
+    top:
+        12%;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        250px;
+
+    height:
+        75px;
+
+    background:
+        white;
+
+    border-radius:
+        100px;
+
+    box-shadow:
+        0 15px 30px
+        rgba(80,130,170,.15);
+
+}
+
+.cloud::before,
+.cloud::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    background:
+        white;
+
+    border-radius:
+        50%;
+
+}
+
+.cloud::before {
+
+    width:
+        110px;
+
+    height:
+        110px;
+
+    left:
+        30px;
+
+    top:
+        -55px;
+
+}
+
+.cloud::after {
+
+    width:
+        140px;
+
+    height:
+        140px;
+
+    right:
+        20px;
+
+    top:
+        -70px;
+
+}
+
+
+/* =========================================================
+   BALLOONS
+========================================================= */
+
+.balloon {
+
+    position:
+        absolute;
+
+    bottom:
+        -100px;
+
+    width:
+        48px;
+
+    height:
+        62px;
+
+    border-radius:
+        50% 50% 45% 45%;
+
+    animation:
+        balloonUp
+        4.8s ease-in forwards;
+
+}
+
+.balloon::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        58px;
+
+    width:
+        1px;
+
+    height:
+        150px;
+
+    background:
+        rgba(70,70,70,.35);
+
+}
+
+@keyframes balloonUp {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(-8deg);
+
+        opacity:
+            1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(10deg);
+
+        opacity:
+            .1;
+
+    }
+
+}
+
+
+/* =========================================================
+   ROSES
+========================================================= */
+
+.bouquet {
+
+    margin:
+        15px auto;
+
+    animation:
+        bouquetPop
+        1s ease;
+
+}
+
+@keyframes bouquetPop {
+
+    0% {
+
+        transform:
+            scale(.2)
+            rotate(-10deg);
+
+        opacity:
+            0;
+
+    }
+
+    70% {
+
+        transform:
+            scale(1.1);
+
+    }
+
+    100% {
+
+        transform:
+            scale(1)
+            rotate(0);
+
+        opacity:
+            1;
+
+    }
+
+}
+
+.roses {
+
+    max-width:
+        320px;
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        2px;
+
+    font-size:
+        34px;
+
+}
+
+.bouquet-paper {
+
+    width:
+        230px;
+
+    height:
+        130px;
+
+    margin:
+        -5px auto 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffc4d8,
+            #fff0f5
+        );
+
+    clip-path:
+        polygon(
+            15% 0,
+            85% 0,
+            100% 100%,
+            50% 72%,
+            0 100%
+        );
+
+}
+
+
+/* =========================================================
+   MAGIC PARTICLES
+========================================================= */
+
+.magic {
+
+    position:
+        fixed;
+
+    pointer-events:
+        none;
+
+    z-index:
+        999;
+
+    animation:
+        magicFly
+        1.4s ease-out
+        forwards;
+
+}
+
+@keyframes magicFly {
+
+    0% {
+
+        transform:
+            translate(0,0)
+            scale(.5);
+
+        opacity:
+            1;
+
+    }
+
+    100% {
+
+        transform:
+            translate(
+                var(--x),
+                var(--y)
+            )
+            scale(1.5);
+
+        opacity:
+            0;
+
+    }
+
+}
+
+
+/* =========================================================
+   HEARTS
+========================================================= */
+
+.heart {
+
+    position:
+        fixed;
+
+    bottom:
+        -30px;
+
+    z-index:
+        500;
+
+    pointer-events:
+        none;
+
+    animation:
+        heartUp
+        6s linear
+        forwards;
+
+}
+
+@keyframes heartUp {
+
+    from {
+
+        transform:
+            translateY(0)
+            rotate(0);
+
+        opacity:
+            1;
+
+    }
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity:
+            0;
+
+    }
+
+}
+
+
+/* =========================================================
+   TYPING
+========================================================= */
+
+.typing {
+
+    text-align:
+        left;
+
+    font-size:
+        clamp(17px, 3vw, 21px);
+
+    line-height:
+        2;
+
+    white-space:
+        pre-line;
+
+    min-height:
+        300px;
+
+}
+
+.cursor {
+
+    display:
+        inline-block;
+
+    width:
+        2px;
+
+    height:
+        22px;
+
+    background:
+        #d84d82;
+
+    animation:
+        blink .8s infinite;
+
+}
+
+@keyframes blink {
+
+    50% {
+        opacity:
+            0;
+    }
+
+}
+
+
+/* =========================================================
+   POLAROID
+========================================================= */
+
+.polaroid {
+
+    width:
+        min(420px, 85vw);
+
+    margin:
+        auto;
+
+    padding:
+        12px 12px 25px;
+
+    background:
+        white;
+
+    box-shadow:
+        0 18px 45px
+        rgba(70,30,60,.22);
+
+    transform:
+        rotate(-2deg);
+
+    animation:
+        photoIn
+        .8s ease;
+
+}
+
+@keyframes photoIn {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            scale(.7)
+            rotate(-15deg);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            scale(1)
+            rotate(-2deg);
+
+    }
+
+}
+
+.polaroid img {
+
+    width:
+        100%;
+
+    max-height:
+        55vh;
+
+    object-fit:
+        cover;
+
+}
+
+.caption {
+
+    font-family:
+        cursive;
+
+    font-size:
+        22px;
+
+    color:
+        #c43f73;
+
+    margin:
+        15px 5px 0;
+
+}
+
+
+/* =========================================================
+   VIDEOS
+========================================================= */
+
+video {
+
+    width:
+        min(700px, 90vw);
+
+    max-height:
+        60vh;
+
+    border-radius:
+        25px;
+
+    background:
+        #111;
+
+    box-shadow:
+        0 20px 50px
+        rgba(50,20,40,.25);
+
+}
+
+
+/* =========================================================
+   SONG CARDS
+========================================================= */
+
+.song-card {
+
+    margin:
+        18px auto;
+
+    padding:
+        20px;
+
+    width:
+        min(650px, 92%);
+
+    border-radius:
+        25px;
+
+    background:
+        rgba(255,255,255,.7);
+
+    box-shadow:
+        0 10px 30px
+        rgba(80,30,60,.08);
+
+}
+
+.disc {
+
+    font-size:
+        50px;
+
+    display:
+        inline-block;
+
+}
+
+.song-card:hover
+.disc {
+
+    animation:
+        spin
+        2s linear
+        infinite;
+
+}
+
+@keyframes spin {
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+audio {
+
+    width:
+        100%;
+
+}
+
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.letter {
+
+    text-align:
+        left;
+
+    padding:
+        25px;
+
+    border-radius:
+        25px;
+
+    background:
+        rgba(255,248,252,.8);
+
+}
+
+.signature {
+
+    text-align:
+        right;
+
+    font-family:
+        cursive;
+
+    font-size:
+        24px;
+
+    color:
+        #c33c72;
+
+}
+
+
+/* =========================================================
+   CAKE LINK
+========================================================= */
+
+.cake {
+
+    font-size:
+        100px;
+
+    animation:
+        cakeBounce
+        1.5s
+        infinite;
+
+}
+
+@keyframes cakeBounce {
+
+    50% {
+
+        transform:
+            translateY(-12px);
+
+    }
+
+}
+
+.cake-link {
+
+    display:
+        inline-block;
+
+    padding:
+        16px 28px;
+
+    border-radius:
+        50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff709f,
+            #c94bff
+        );
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.big-heart {
+
+    font-size:
+        90px;
+
+    animation:
+        heartbeat
+        1.2s
+        infinite;
+
+}
+
+@keyframes heartbeat {
+
+    50% {
+
+        transform:
+            scale(1.2);
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px) {
+
+    .card {
+
+        padding:
+            25px 16px;
+
+    }
+
+    h1 {
+
+        font-size:
+            43px;
+
+    }
+
+    .roses {
+
+        font-size:
+            27px;
+
+    }
+
+    .typing {
+
+        font-size:
+            16px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     OPENING
+===================================================== -->
+
+<section
+id="opening"
+class="slide active opening">
+
+<div class="cloud"></div>
+
+<div id="balloons"></div>
+
+
+<div
+id="openingCard"
+class="card"
+style="display:none;">
+
+<div class="bouquet">
+
+<div
+id="roses"
+class="roses">
+</div>
+
+<div class="bouquet-paper"></div>
+
+</div>
+
+<h1>
+Happiest 24th Birthday
+</h1>
+
+<h2>
+Anushka ❤️
+</h2>
+
+<p>
+🌹 24 roses for 24 beautiful years 🌹
+</p>
+
+<button
+onclick="goQuestion()">
+
+Continue 💗
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUESTION
+===================================================== -->
+
+<section
+id="question"
+class="slide">
+
+<div class="card">
+
+<div class="emoji">
+👀
+</div>
+
+<h1>
+Anushka...
+</h1>
+
+<h2>
+Do you wanna know what's next? 🥹
+</h2>
+
+<button
+onclick="startSurprise()">
+
+YESSSS 💗
+
+</button>
+
+<button
+class="no"
+onclick="showNo()">
+
+NO 😭
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NO
+===================================================== -->
+
+<section
+id="noScreen"
+class="slide">
+
+<div class="card">
+
+<div class="emoji">
+💔🥹
+</div>
+
+<h1>
+OUCHHH
+</h1>
+
+<h2>
+You broke my heart 🥹💔
+</h2>
+
+<p>
+Please please see it naaa 🥺
+</p>
+
+<p>
+I made all of this for youuu 😭
+</p>
+
+<button
+onclick="goQuestion()">
+
+Go Back 🥺
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section
+id="intro"
+class="slide">
+
+<div class="card">
+
+<h1>
+A little something from Mansi 💗
+</h1>
+
+<div
+id="typingText"
+class="typing">
+</div>
+
+<br>
+
+<button
+id="introButton"
+style="display:none"
+onclick="nextSlide()">
+
+Our memories 📸
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO 1
+===================================================== -->
+
+<section
+id="photo1"
+class="slide">
+
+<div class="card">
+
+<h1>
+Memory #1 📸
+</h1>
+
+<div class="polaroid">
+
+<img
+src="photos/photo1.jpg">
+
+<p class="caption">
+You look so so cute with
+glassesssss cutieeeee 🥹❤️
+</p>
+
+</div>
+
+<button
+onclick="photoMagic(); nextSlide()">
+
+Next 💗
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO 2
+===================================================== -->
+
+<section
+id="photo2"
+class="slide">
+
+<div class="card">
+
+<h1>
+Memory #2 🌸
+</h1>
+
+<div class="polaroid">
+
+<img
+src="photos/photo2.jpg">
+
+<p class="caption">
+Saree really suits youuuu.
+How are you this pretty?? 😭❤️
+</p>
+
+</div>
+
+<button
+onclick="photoMagic(); nextSlide()">
+
+Next 💗
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO 3
+===================================================== -->
+
+<section
+id="photo3"
+class="slide">
+
+<div class="card">
+
+<h1>
+Memory #3 👀
+</h1>
+
+<div class="polaroid">
+
+<img
+src="photos/photo3.jpg">
+
+<p class="caption">
+Ughhhhh you're such a hottie 😭🔥
+</p>
+
+</div>
+
+<button
+onclick="photoMagic(); nextSlide()">
+
+Next 😂
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO 4
+===================================================== -->
+
+<section
+id="photo4"
+class="slide">
+
+<div class="card">
+
+<h1>
+Memory #4 🥹
+</h1>
+
+<div class="polaroid">
+
+<img
+src="photos/photo4.jpg">
+
+<p class="caption">
+
+I still remember the day we
+met for the first time.
+
+<br><br>
+
+Best day of my life.
+
+<br><br>
+
+Thank you for all your letters.
+I'll preserve them till my death. ❤️
+
+</p>
+
+</div>
+
+<button
+onclick="photoMagic(); nextSlide()">
+
+Next 🥹
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO 5
+===================================================== -->
+
+<section
+id="photo5"
+class="slide">
+
+<div class="card">
+
+<h1>
+Memory #5 😌
+</h1>
+
+<div class="polaroid">
+
+<img
+src="photos/photo5.jpg">
+
+<p class="caption">
+
+I am surely gonna wife you up.
+
+<br>
+
+Just wait.
+
+<br>
+
+And wait.
+
+<br>
+
+And wait. 😂❤️
+
+</p>
+
+</div>
+
+<button
+onclick="photoMagic(); nextSlide()">
+
+Unlock the videos 🎥
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VIDEO 1
+===================================================== -->
+
+<section
+id="video1"
+class="slide">
+
+<div class="card">
+
+<h1>
+🔓 Memory Unlocked
+</h1>
+
+<h2>
+Video #1
+</h2>
+
+<video
+controls
+playsinline>
+
+<source
+src="videos/video1.mp4"
+type="video/mp4">
+
+</video>
+
+<br>
+
+<button
+onclick="nextSlide()">
+
+Next 🎥
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VIDEO 2
+===================================================== -->
+
+<section
+id="video2"
+class="slide">
+
+<div class="card">
+
+<h1>
+🔓 Memory Unlocked
+</h1>
+
+<h2>
+Video #2
+</h2>
+
+<video
+controls
+playsinline>
+
+<source
+src="videos/video2.mp4"
+type="video/mp4">
+
+</video>
+
+<br>
+
+<button
+onclick="nextSlide()">
+
+Next 🎥
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VIDEO 3
+===================================================== -->
+
+<section
+id="video3"
+class="slide">
+
+<div class="card">
+
+<h1>
+🔓 Memory Unlocked
+</h1>
+
+<h2>
+Video #3
+</h2>
+
+<video
+controls
+playsinline>
+
+<source
+src="videos/video3.mp4"
+type="video/mp4">
+
+</video>
+
+<br>
+
+<button
+onclick="nextSlide()">
+
+Songs that remind me of you 🎵
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SONGS
+===================================================== -->
+
+<section
+id="songs"
+class="slide">
+
+<div class="card">
+
+<h1>
+Songs That Keep
+Reminding Me Of You 🎵
+</h1>
+
+
+<div class="song-card">
+
+<div class="disc">
+💿
+</div>
+
+<h2>
+Song #1 ❤️
+</h2>
+
+<p>
+Remember this??
+</p>
+
+<audio controls>
+
+<source
+src="songs/song1.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<div class="song-card">
+
+<div class="disc">
+💿
+</div>
+
+<h2>
+Song #2 💗
+</h2>
+
+<p>
+And this one??
+</p>
+
+<audio controls>
+
+<source
+src="songs/song2.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<div class="song-card">
+
+<div class="disc">
+💿
+</div>
+
+<h2>
+Song #3 🌸
+</h2>
+
+<p>
+You are as beautiful as this song.
+</p>
+
+<audio controls>
+
+<source
+src="songs/song3.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<div class="song-card">
+
+<div class="disc">
+💿
+</div>
+
+<h2>
+Song #4 ✨
+</h2>
+
+<p>
+This song screams YOU.
+</p>
+
+<audio controls>
+
+<source
+src="songs/song4.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<div class="song-card">
+
+<div class="disc">
+💿
+</div>
+
+<h2>
+Song #5 🫶🏻
+</h2>
+
+<p>
+This is for us.
+</p>
+
+<audio controls>
+
+<source
+src="songs/song5.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<div class="song-card">
+
+<div class="disc">
+💿
+</div>
+
+<h2>
+Song #6 ❤️
+</h2>
+
+<p>
+Again us.
+</p>
+
+<audio controls>
+
+<source
+src="songs/song6.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+<button
+onclick="nextSlide()">
+
+Something important 🥹
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EMOTIONAL
+===================================================== -->
+
+<section
+id="emotional"
+class="slide">
+
+<div class="card">
+
+<h1>
+Something I Really Want You To Know 🥹
+</h1>
+
+<div class="letter">
+
+<p>
+Since the day we have been friends...
+</p>
+
+<p>
+Aese nahi ki we never do
+jhagda shagda.
+</p>
+
+<p>
+We did. 😂
+</p>
+
+<p>
+But we always find a way
+to each other.
+</p>
+
+<p>
+If I am being honest,
+I really love the exclusivity
+that you give me.
+</p>
+
+<p>
+I'll cherish every moment
+that I have spent with you.
+</p>
+
+<p>
+You always get me.
+You understand me.
+</p>
+
+<p>
+You are the best.
+</p>
+
+<p>
+I really love you, Anushka.
+</p>
+
+<p>
+You are my friend,
+my sister,
+my mother,
+all to me.
+</p>
+
+<p>
+Please don't ever leave me.
+</p>
+
+<p>
+People come and go...
+</p>
+
+<p>
+But not you, okayyy? 🥹❤️
+</p>
+
+<p class="signature">
+Always your Mansi 🫶🏻
+</p>
+
+</div>
+
+<button
+onclick="nextSlide()">
+
+Since we can't celebrate together... 🎂
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CAKE
+===================================================== -->
+
+<section
+id="cake"
+class="slide">
+
+<div class="card">
+
+<div class="cake">
+🎂
+</div>
+
+<h1>
+Since we can't celebrate together...
+</h1>
+
+<p>
+Here I am sending this for you. ❤️
+</p>
+
+<p>
+Go open it, birthday girl. 👀
+</p>
+
+<a
+class="cake-link"
+href="https://bdaycake.com/subtle-corn-82?invitation_code=WLAA"
+target="_blank">
+
+🎁 Open Your Birthday Cake
+
+</a>
+
+<br><br>
+
+<button
+onclick="nextSlide()">
+
+Okay okay... last slide promise 😭
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAKE ENDING 1
+===================================================== -->
+
+<section
+id="ending1"
+class="slide">
+
+<div class="card">
+
+<div class="emoji">
+😭❤️
+</div>
+
+<h1>
+Okay okay...
+</h1>
+
+<h2>
+Last slide promise.
+</h2>
+
+<p>
+Happiest birthday again Anushka.
+</p>
+
+<p>
+Always be happppyyy.
+</p>
+
+<p>
+That's what I wish for you. ❤️
+</p>
+
+<button
+onclick="nextSlide()">
+
+Okay bye 👋
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAKE ENDING 2
+===================================================== -->
+
+<section
+id="ending2"
+class="slide">
+
+<div class="card">
+
+<div class="emoji">
+👀
+</div>
+
+<h1>
+WAIT.
+</h1>
+
+<h2>
+This one's gonna be pakka last.
+</h2>
+
+<p>
+I really wanna make
+all our dreams come true.
+</p>
+
+<p>
+And I hope we get to live
+all those dreams together.
+</p>
+
+<p>
+Someday. ❤️
+</p>
+
+<button
+onclick="nextSlide()">
+
+Okay NOW bye 😭
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section
+id="final"
+class="slide">
+
+<div class="card">
+
+<div class="big-heart">
+❤️
+</div>
+
+<h1>
+Okay Anushka...
+</h1>
+
+<h2>
+THIS IS ACTUALLY THE LAST SLIDE.
+</h2>
+
+<p>
+Before you go...
+</p>
+
+<p>
+Bye bye. 😂❤️
+</p>
+
+<h2>
+Have a great birthday, head!!
+</h2>
+
+<p>
+And always remember...
+</p>
+
+<h1>
+Mansi loves youuuuu 🫶🏻
+</h1>
+
+<p>
+🎂 🎈 🌹 💗 ✨
+</p>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+/* =========================================================
+   SLIDE SYSTEM
+========================================================= */
+
+const slideIds = [
+
+    "opening",
+
+    "question",
+
+    "noScreen",
+
+    "intro",
+
+    "photo1",
+
+    "photo2",
+
+    "photo3",
+
+    "photo4",
+
+    "photo5",
+
+    "video1",
+
+    "video2",
+
+    "video3",
+
+    "songs",
+
+    "emotional",
+
+    "cake",
+
+    "ending1",
+
+    "ending2",
+
+    "final"
+
+];
+
+
+let current = 0;
+
+
+function showSlide(id) {
+
+    document
+        .querySelectorAll(".slide")
+        .forEach(
+            slide =>
+            slide.classList.remove("active")
+        );
+
+
+    document
+        .getElementById(id)
+        .classList.add("active");
+
+
+    window.scrollTo(0,0);
+
+}
+
+
+function goQuestion() {
+
+    current = 1;
+
+    showSlide("question");
+
+    createMagic();
+
+}
+
+
+function showNo() {
+
+    current = 2;
+
+    showSlide("noScreen");
+
+}
+
+
+function startSurprise() {
+
+    current = 3;
+
+    showSlide("intro");
+
+    createMagic();
+
+    typeMessage();
+
+    startHearts();
+
+}
+
+
+function nextSlide() {
+
+    current++;
+
+    if (
+        current >= slideIds.length
+    ) {
+
+        current =
+            slideIds.length - 1;
+
+    }
+
+    showSlide(
+        slideIds[current]
+    );
+
+    createMagic();
+
+}
+
+
+/* =========================================================
+   TYPING MESSAGE
+========================================================= */
+
+let typed = false;
+
+
+function typeMessage() {
+
+    if (typed)
+        return;
+
+    typed = true;
+
+
+    const text = `I wish you really really happy birthday Anushka.
+
+Jabse tum meri life mein aayi ho,
+sab best hi hora.
+
+Thank you for your existence.
+
+You are one of the best things of my life.
+
+Please always be with me. ❤️
+
+— Mansi 🫶🏻`;
+
+
+    const box =
+        document.getElementById(
+            "typingText"
+        );
+
+
+    let i = 0;
+
+
+    function type() {
+
+        if (i < text.length) {
+
+            box.textContent +=
+                text.charAt(i);
+
+            i++;
+
+            setTimeout(
+                type,
+                28
+            );
+
+        }
+
+        else {
+
+            document
+                .getElementById(
+                    "introButton"
+                )
+                .style.display =
+                "inline-block";
+
+        }
+
+    }
+
+
+    type();
+
+}
+
+
+/* =========================================================
+   24 BALLOONS
+========================================================= */
+
+function createBalloons() {
+
+    const container =
+        document.getElementById(
+            "balloons"
+        );
+
+
+    const colors = [
+
+        "#ff5c8a",
+        "#ff8fab",
+        "#c77dff",
+        "#7bdff2",
+        "#ffd166",
+        "#ff9f1c",
+        "#a8dadc",
+        "#f28482"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 24;
+        i++
+    ) {
+
+        const balloon =
+            document.createElement(
+                "div"
+            );
+
+
+        balloon.className =
+            "balloon";
+
+
+        balloon.style.left =
+            (
+                Math.random() * 92
+            ) + "%";
+
+
+        balloon.style.background =
+            colors[
+                i % colors.length
+            ];
+
+
+        balloon.style.animationDelay =
+            (
+                i * .12
+            ) + "s";
+
+
+        container.appendChild(
+            balloon
+        );
+
+    }
+
+
+    setTimeout(
+        revealBirthday,
+        5700
+    );
+
+}
+
+
+/* =========================================================
+   BIRTHDAY REVEAL
+========================================================= */
+
+function revealBirthday() {
+
+    const card =
+        document.getElementById(
+            "openingCard"
+        );
+
+
+    card.style.display =
+        "block";
+
+
+    createRoses();
+
+    createMagic();
+
+}
+
+
+/* =========================================================
+   24 ROSES
+========================================================= */
+
+function createRoses() {
+
+    const roses =
+        document.getElementById(
+            "roses"
+        );
+
+
+    for (
+        let i = 0;
+        i < 24;
+        i++
+    ) {
+
+        const rose =
+            document.createElement(
+                "span"
+            );
+
+
+        rose.textContent =
+            "🌹";
+
+
+        rose.style.opacity =
+            "0";
+
+
+        rose.style.animation =
+            "rosePop .5s ease forwards";
+
+
+        rose.style.animationDelay =
+            (
+                i * .07
+            ) + "s";
+
+
+        roses.appendChild(
+            rose
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   MAGIC SPARKLES
+========================================================= */
+
+function createMagic() {
+
+    const symbols = [
+
+        "✨",
+        "💗",
+        "⭐",
+        "🌸",
+        "💕",
+        "🦋"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 35;
+        i++
+    ) {
+
+        const magic =
+            document.createElement(
+                "div"
+            );
+
+
+        magic.className =
+            "magic";
+
+
+        magic.textContent =
+            symbols[
+                Math.floor(
+                    Math.random()
+                    * symbols.length
+                )
+            ];
+
+
+        magic.style.left =
+            (
+                50 +
+                (Math.random() * 30 - 15)
+            ) + "vw";
+
+
+        magic.style.top =
+            (
+                50 +
+                (Math.random() * 30 - 15)
+            ) + "vh";
+
+
+        magic.style.setProperty(
+            "--x",
+            (
+                Math.random() * 500 - 250
+            ) + "px"
+        );
+
+
+        magic.style.setProperty(
+            "--y",
+            (
+                Math.random() * 500 - 250
+            ) + "px"
+        );
+
+
+        document.body.appendChild(
+            magic
+        );
+
+
+        setTimeout(
+            () =>
+            magic.remove(),
+            1500
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   PHOTO MAGIC
+========================================================= */
+
+function photoMagic() {
+
+    for (
+        let i = 0;
+        i < 25;
+        i++
+    ) {
+
+        setTimeout(
+            createHeart,
+            i * 30
+        );
+
+    }
+
+    createMagic();
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+let heartsStarted = false;
+
+
+function startHearts() {
+
+    if (heartsStarted)
+        return;
+
+    heartsStarted = true;
+
+
+    setInterval(
+        createHeart,
+        750
+    );
+
+}
+
+
+function createHeart() {
+
+    const heart =
+        document.createElement(
+            "div"
+        );
+
+
+    heart.className =
+        "heart";
+
+
+    const choices = [
+
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💓",
+        "🩷"
+
+    ];
+
+
+    heart.textContent =
+        choices[
+            Math.floor(
+                Math.random()
+                * choices.length
+            )
+        ];
+
+
+    heart.style.left =
+        (
+            Math.random() * 100
+        ) + "vw";
+
+
+    heart.style.fontSize =
+        (
+            15 +
+            Math.random() * 20
+        ) + "px";
+
+
+    heart.style.animationDuration =
+        (
+            4 +
+            Math.random() * 3
+        ) + "s";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(
+        () => heart.remove(),
+        7000
+    );
+
+}
+
+
+/* =========================================================
+   ROSE ANIMATION
+========================================================= */
+
+const style =
+document.createElement("style");
+
+style.textContent = `
+
+@keyframes rosePop {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            scale(0)
+            rotate(-30deg);
+
+    }
+
+    70% {
+
+        transform:
+            scale(1.3);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            rotate(0);
+
+    }
+
+}
+
+`;
+
+document.head.appendChild(
+    style
+);
+
+
+/* =========================================================
+   START
+========================================================= */
+
+createBalloons();
+
+</script>
+
+</body>
+
+</html>
